@@ -21,9 +21,10 @@ headers = {}
 # ------------------------------------------------------------------------------
 # ============================= AUXILIAR FUNCTIONS ============================= 
 
-''' Generates proxies and user agent requests in order to avoid get blocking
-	by the server.'''
-# The function below returns two lists: proxies and userAgents
+''' These auxiliar functions generate and rotate IP proxy and user agent requests 
+    in order to avoid getiting blocked by the server.'''
+
+# The function below returns a fresh list of proxies and userAgents
 def GenerateProxiesAndUserAgent(amoutOfProxies=100):
 
 	# Gets avaible proxies at .https://free-proxy-list.net/
