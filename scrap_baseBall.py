@@ -1,5 +1,3 @@
-
-
 import requests, bs4
 import re, os
 import string, time, random
@@ -220,7 +218,8 @@ def pullPlayerData(url):
 def getData():
 
 	fileHeader = ['Id','Name','Position', 'Birthday','BirthPlace','ImgURL']
-	# print (';'.join(fileHeader))
+	# prints file header
+	'''print (';'.join(fileHeader))'''
 	playerId = 1
 	
 	global proxies
@@ -253,8 +252,10 @@ def getData():
 
 			# pullingData
 			playerData = pullPlayerData(playerURL)
-			# printData
+			# prints Data without a ID
 			print(';'.join(playerData))
+			# prints Data with an ID
+			'''print(playerId + ';' + ';'.join(playerData))'''
 			playerId += 1
 	
 
