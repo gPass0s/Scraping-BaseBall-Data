@@ -6,13 +6,6 @@ import string, time, random
 from lxml.html import fromstring
 import traceback
 
-
-# GLobal variables
-proxiesList = []
-userAgents = []
-proxies = {}
-headers = {}
-
 # ------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------
@@ -20,6 +13,12 @@ headers = {}
 # ------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------
 # ============================= AUXILIAR FUNCTIONS ============================= 
+
+# GLobal variables
+proxiesList = []
+userAgents = []
+proxies = {}
+headers = {}
 
 ''' These auxiliar functions generate and rotate IP proxy and user agent requests 
     in order to avoid getiting blocked by the server.'''
