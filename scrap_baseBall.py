@@ -225,9 +225,7 @@ def getData():
 	global proxies
 	global headers
 
-	BuildRequestsParameters()
-
-
+        # Iterates through all alphabet letters
 	for letter in list(string.ascii_lowercase):
 		
 		
