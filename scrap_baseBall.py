@@ -67,7 +67,7 @@ def SelectRandomProxyFromList():
 	
 	global proxiesList
 
-	# Prevents in case proxies in empty
+	# Prevents errors in case proxies list is empty
 	while True: 
 		try: 
 			proxy = random.choice(proxiesList)
@@ -79,7 +79,7 @@ def SelectRandomProxyFromList():
 
 	return proxy
 
-# Builds randomly requests parameters
+# Builds random requests parameters
 def BuildRequestsParameters():
 
 	global userAgents
